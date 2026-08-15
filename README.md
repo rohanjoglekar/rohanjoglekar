@@ -8,6 +8,7 @@ I design, build, and operate production trading systems end to end — quantitat
 research, broker execution, full-stack products, and the Linux infrastructure
 beneath them. Built and run by one person.
 
+[![Résumé (PDF)](https://img.shields.io/badge/Résumé-download_PDF-b91c1c?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/rohanjoglekar/rohanjoglekar/blob/main/Rohan_Joglekar_Resume.pdf)
 [![Forge — live dashboard](https://img.shields.io/badge/Forge-live_dashboard-b45309?style=flat-square&logo=bitcoin&logoColor=white)](https://forge-view.5.78.193.177.sslip.io)
 [![Concordia — live demo](https://img.shields.io/badge/Concordia-live_demo-0f766e?style=flat-square&logo=nextdotjs&logoColor=white)](https://demo.voteconcordia.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohan-joglekar-16339132b/)
