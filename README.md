@@ -18,26 +18,26 @@ I build and operate AI-driven research and trading systems end to end: the resea
 
 `Python` · `FastAPI` · `Next.js` · `Claude API` — [GitHub](https://github.com/rohanjoglekar/agentic-research-trading-platform) · [Live demo](https://agentic-research-trading.vercel.app/demo)
 
-- **Architecture.** Engineered the platform on a Linux server with a FastAPI backend, a Next.js dashboard, and systemd timers that run every job. AI agents (Claude, Gemini, and local Ollama models) handle research, valuation, and trade management.
-- **Research and DCF.** Built a research engine that grades about 600 companies daily, including a weekly Claude read of each business. Alongside it, an agentic DCF pipeline has Claude create bear, base, and bull cases from SEC filings into full Excel valuation models that are automatically checked before publishing.
-- **Equity trader.** Ran a $1M paper stock portfolio that trades automatically from that research. An AI agent reviews performance against the S&P 500 each month and adjusts the strategy's settings within fixed limits.
-- **Options trader.** Ran an automated options strategy that sells cash-secured puts on a $100K paper account three times a day and rates every trade. An AI agent researches positions that turn against it and decides whether to hold, close, or roll them.
+- **Architecture.** Built an agentic research and trading platform on a Linux server (FastAPI, Next.js, systemd), with Claude, Gemini, and local Ollama agents handling research, valuation, and trade management.
+- **Research and DCF.** Graded about 600 companies daily on seven factors, including a weekly Claude read of each business. An agentic DCF pipeline turns SEC filings into bear, base, and bull Excel models, verified before publishing.
+- **Equity trader.** Traded a $1M paper stock portfolio from the research, with an AI agent that reviews performance against the S&P 500 monthly and tunes strategy settings within fixed limits.
+- **Options trader.** Sold cash-secured puts on a $100K paper account three times a day, with an AI agent that researches losing positions and decides whether to hold, close, or roll them.
 
 ## Concordia — Investment Club
 
 `Python` · `FastAPI` · `SQLite` · `Next.js` · `Claude API` — [GitHub](https://github.com/rohanjoglekar/voteconcordia) · [Live demo](https://demo.voteconcordia.com)
 
-- **Architecture.** Built the platform on FastAPI, SQLite, and Next.js to execute one vote-chosen portfolio inside each member's own Robinhood account through encrypted OAuth, so capital is never pooled or held by the club. Scheduled jobs run voting, settlement-aware trading, and reconciliation against broker records, covered by more than 900 backend tests.
-- **Idea.** Founded the club on collective wisdom. Members split their votes across S&P 500 stocks each week and the top 20 form the basket. The club's paper decisions index is up 5.6% against the S&P 500's −6.9% across 52 sessions since June 2026.
-- **Voting power.** Designed the club's voting-power rule, which scores each member's picks against the rest of the club every week and shifts power only once a record is too strong to be luck. In a 20-year simulation of 100 members, it cost nothing when no one had real skill and gave a genuinely skilled member 28% of the power, up from 1.5%.
-- **100 Claude bots.** Added 100 Claude-powered AI voting members, each a distinct strategy that votes on every S&P 500 stock weekly with a written thesis but holds no account and places no orders. Their ballots average a 0.03 correlation, so they act as about 24 independent voters.
+- **Architecture.** Built on FastAPI, SQLite, and Next.js to execute one vote-chosen portfolio in each member's own Robinhood account via encrypted OAuth, with settlement-aware trading, broker reconciliation, and 900+ tests.
+- **Idea.** Founded an investment club run on collective wisdom: members vote weekly on S&P 500 stocks and the top 20 become the portfolio, up 5.6% vs. the S&P 500's −6.9% over 52 sessions.
+- **Voting power.** Designed a voting-power rule that shifts influence only once a member's record is too strong to be luck. In a 20-year, 100-member simulation it gave a skilled member 28% of the power vs. 1.5%.
+- **100 Claude bots.** Added 100 Claude-powered AI members, each a distinct strategy voting weekly with a written thesis. Their ballots average a 0.03 correlation, acting as about 24 independent voters.
 
 ## Research — AI Credit Risk Assessment and Historically Marginalized Communities
 
 `Python` · `NumPy` · `pandas` — [Paper (PDF)](https://github.com/rohanjoglekar/rohanjoglekar/blob/main/AI_Credit_Risk_Assessment_Joglekar.pdf) · [Code and results](https://github.com/rohanjoglekar/credit-approval-fairness-audit) · Presented at the NJIT Honors Interdisciplinary Research Forum, Spring 2026
 
-- Reviewed finance, economics, and legal research showing that AI lending models can discriminate without ever seeing race, by inferring it from proxies like neighborhood and income, and proposed a fair-lending framework of risk-equivalent audits, fairness reporting, and proxy testing.
-- Tested this on 228K New Jersey mortgage applications with a logistic regression built from scratch in NumPy (0.70 AUC). With race excluded, the model still wrongly rejected 54% of Black applicants whom lenders had approved, versus 36% of White applicants.
+- Reviewed finance, economics, and legal research on how AI lending models infer race from proxies like neighborhood and income, and proposed a fair-lending audit framework.
+- Built a logistic regression from scratch in NumPy on 228K NJ mortgage applications (0.70 AUC). With race excluded, it wrongly rejected 54% of approved Black applicants vs. 36% of White ones.
 
 ---
 
