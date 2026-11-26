@@ -36,8 +36,8 @@ I build and operate AI-driven research and trading systems end to end: the resea
 
 `Python` · `NumPy` · `pandas` — [Paper (PDF)](https://github.com/rohanjoglekar/rohanjoglekar/blob/main/AI_Credit_Risk_Assessment_Joglekar.pdf) · [Code and results](https://github.com/rohanjoglekar/credit-approval-fairness-audit) · Presented at the NJIT Honors Interdisciplinary Research Forum, Spring 2026
 
-- Reviewed finance, economics, and legal research on how AI lending models infer race from proxies like neighborhood and income, and proposed a fair-lending audit framework.
-- Built a logistic regression from scratch in NumPy on 228K NJ mortgage applications (0.70 AUC). With race excluded, it wrongly rejected 54% of approved Black applicants vs. 36% of White ones.
+- Reviewed finance, economics, and legal research on algorithmic bias in lending and proposed a fair-lending framework of risk-equivalent audits, fairness reporting, and proxy testing.
+- Built a logistic regression from scratch in NumPy on 228K NJ mortgage applications (0.70 AUC) with race excluded. It still wrongly rejected 54% of approved Black applicants vs. 36% of White ones, showing that race still enters a model through proxies like neighborhood and income.
 
 ---
 
