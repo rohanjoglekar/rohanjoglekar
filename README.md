@@ -28,7 +28,7 @@ I build and operate AI-driven research and trading systems end to end: the resea
 `Python` · `FastAPI` · `SQLite` · `Next.js` · `Claude API` — [GitHub](https://github.com/rohanjoglekar/voteconcordia) · [Live demo](https://demo.voteconcordia.com)
 
 - **Architecture.** Built the platform on FastAPI, SQLite, and Next.js to execute one vote-chosen portfolio inside each member's own Robinhood account through encrypted OAuth, so capital is never pooled or held by the club. Scheduled jobs run voting, settlement-aware trading, and reconciliation against broker records, covered by more than 900 backend tests.
-- **Idea.** Founded the club on the wisdom of crowds. Members split their votes across S&P 500 stocks each week and the top 20 form the basket. The club's paper decisions index is up 5.6% against the S&P 500's −6.9% across 52 sessions since June 2026.
+- **Idea.** Founded the club on collective wisdom. Members split their votes across S&P 500 stocks each week and the top 20 form the basket. The club's paper decisions index is up 5.6% against the S&P 500's −6.9% across 52 sessions since June 2026.
 - **Voting power.** Designed the club's voting-power rule, which scores each member's picks against the rest of the club every week and shifts power only once a record is too strong to be luck. In a 20-year simulation of 100 members, it cost nothing when no one had real skill and gave a genuinely skilled member 28% of the power, up from 1.5%.
 - **100 Claude bots.** Added 100 Claude-powered AI voting members, each a distinct strategy that votes on every S&P 500 stock weekly with a written thesis but holds no account and places no orders. Their ballots average a 0.03 correlation, so they act as about 24 independent voters.
 
