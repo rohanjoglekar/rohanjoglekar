@@ -19,9 +19,9 @@ I build and operate AI-driven research and trading systems end to end: the resea
 `Python` · `FastAPI` · `Next.js` · `Claude API` — [GitHub](https://github.com/rohanjoglekar/agentic-research-trading-platform) · [Live demo](https://agentic-research-trading.vercel.app/demo)
 
 - **Architecture.** Engineered the platform on a Linux server with a FastAPI backend, a Next.js dashboard, and systemd timers that run every job. AI agents (Claude, Gemini, and local Ollama models) handle research, valuation, and trade management.
-- **Research and DCF.** Built a research engine that grades about 600 companies daily on seven factors, including a weekly Claude read of each business. Alongside it, an agentic DCF pipeline has Claude create bear, base, and bull cases from SEC XBRL filings into 10-year Excel models with 5×5 sensitivity grids, each recalculated in LibreOffice against integrity checks. Nearly 170 models are live.
-- **Equity trader.** Operated a $1M paper equity portfolio built from that research, holding 15 to 22 names against the S&P 500 with conviction-based sizing, 8% position and 30% sector caps, and a Treasury-bill reserve. After 57% of exits came within three days, an incumbency band and a 5-day minimum hold halved modeled turnover.
-- **Options trader.** Ran a cash-secured put and covered-call wheel on a $100K paper account three times a day, rating contracts A to D with weights fit on 2,150 past picks. An AI agent decides whether to hold, close, or roll losing trades within hard limits. A replay over 375K real 2024–26 option contracts showed the live universe beating a wider 300-stock universe in all 200 robustness trials.
+- **Research and DCF.** Built a research engine that grades about 600 companies daily, including a weekly Claude read of each business. Alongside it, an agentic DCF pipeline has Claude create bear, base, and bull cases from SEC filings into full Excel valuation models that are automatically checked before publishing.
+- **Equity trader.** Ran a $1M paper stock portfolio that trades automatically from that research. An AI agent reviews performance against the S&P 500 each month and adjusts the strategy's settings within fixed limits.
+- **Options trader.** Ran an automated options strategy that sells cash-secured puts on a $100K paper account three times a day and rates every trade. An AI agent researches positions that turn against it and decides whether to hold, close, or roll them, with about a 75% win rate.
 
 ## Concordia — Investment Club
 
