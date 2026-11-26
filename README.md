@@ -32,6 +32,13 @@ I build and operate AI-driven research and trading systems end to end: the resea
 - **Voting power.** Designed the club's voting-power rule, which scores each member's picks against the rest of the club every week and shifts power only once a record is too strong to be luck. In a 20-year simulation of 100 members, it cost nothing when no one had real skill and gave a genuinely skilled member 28% of the power, up from 1.5%.
 - **100 Claude bots.** Added 100 Claude-powered AI voting members, each a distinct strategy that votes on every S&P 500 stock weekly with a written thesis but holds no account and places no orders. Their ballots average a 0.03 correlation, so they act as about 24 independent voters.
 
+## Research — AI Credit Risk Assessment and Historically Marginalized Communities
+
+`Python` · `NumPy` · `pandas` — [Paper (PDF)](https://github.com/rohanjoglekar/rohanjoglekar/blob/main/AI_Credit_Risk_Assessment_Joglekar.pdf) · [Code and results](https://github.com/rohanjoglekar/credit-approval-fairness-audit) · Presented at the NJIT Honors Interdisciplinary Research Forum, Spring 2026
+
+- Reviewed finance, economics, and legal research showing that AI lending models can discriminate without ever seeing race, by inferring it from proxies like neighborhood and income, and proposed a fair-lending framework of risk-equivalent audits, fairness reporting, and proxy testing.
+- Tested this on 228K New Jersey mortgage applications with a logistic regression built from scratch in NumPy (0.70 AUC). With race excluded, the model still wrongly rejected 54% of Black applicants whom lenders had approved, versus 36% of White applicants.
+
 ---
 
 ## Skills
